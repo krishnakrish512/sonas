@@ -34,6 +34,8 @@
                         </li>
                     </ol>
                     <p>Thanks <strong>Rob</strong>.</p>
+
+                    <?php the_time('jS F Y');?>
                     <hr>
                     <h2>Media</h2>
                     <div class="grid-container clearfix row" data-lightbox="gallery">

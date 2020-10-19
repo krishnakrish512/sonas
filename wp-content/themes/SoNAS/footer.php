@@ -1,5 +1,6 @@
 <footer id="footer" class="dark" style="background-color: #101010;">
-    <?php if (is_page(array('Home', 'About Us', 'Contact', 'Menu Title'))) {
+    <?php
+//    if (is_page(array('Home', 'About Us', 'Contact', 'Menu Title'))) {
     //    var_dump(is_page());
     //    exit();
     ?>
@@ -101,93 +102,93 @@
 <div id="gotoTop" class="icon-angle-up"></div>
 
 <?php wp_footer(); ?>
+<!---->
+<?php ////} else { ?>
+<!--    --><?php //$contact = get_field('contact', 'option'); ?>
+<!--    <footer id="footer" class="dark" style="background-color: #101010;">-->
+<!--        <div class="container">-->
+<!--            <div class="footer-widgets-wrap">-->
+<!---->
+<!--                <div class="row justify-content-center">-->
+<!--                    <div class="col-lg-9">-->
+<!--                        <div class="widget clearfix">-->
+<!---->
+<!--                            <div class="row col-mb-30">-->
+<!--                                                                <div class="col-lg-3 col-6 widget_links">-->
+<!--                                --><?php
+//                                wp_nav_menu(array(
+//                                    'theme_location' => 'footer_first',
+//                                    'container' => 'div',
+//                                    'container_class' => 'col-lg-3 col-6 widget_links'
+//                                )); ?>
+<!--                                --><?php //wp_nav_menu(array(
+//                                    'theme_location' => 'footer_second',
+//                                    'container' => 'div',
+//                                    'container_class' => 'col-lg-3 col-6 widget_links'
+//                                )); ?>
+<!--                                --><?php //wp_nav_menu(array(
+//                                    'theme_location' => 'footer_third',
+//                                    'container' => 'div',
+//                                    'container_class' => 'col-lg-3 col-6 widget_links'
+//                                )); ?>
+<!--                                --><?php //wp_nav_menu(array(
+//                                    'theme_location' => 'footer_fourth',
+//                                    'container' => 'div',
+//                                    'container_class' => 'col-lg-3 col-6 widget_links'
+//                                )); ?>
+<!--                            </div>-->
+<!---->
+<!--                        </div>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="col-lg-3 mt-5 mt-lg-0 text-center text-lg-right">-->
+<!--                        <div class="widget clearfix">-->
+<!---->
+<!--                            <div class="row">-->
+<!--                                <div class="col-12 mb-3">-->
+<!--                                    <small>Call Us:</small>-->
+<!--                                    <h4 class="h4">--><?//= $contact['call_us'] ?><!--</h4>-->
+<!--                                </div>-->
+<!---->
+<!--                                <div class="col-12 d-flex justify-content-center justify-content-lg-end">-->
+<!--                                    <a href="#" class="social-icon si-small si-light si-facebook">-->
+<!--                                        <i class="icon-facebook"></i>-->
+<!--                                        <i class="icon-facebook"></i>-->
+<!--                                    </a>-->
+<!--                                    <a href="#" class="social-icon si-small si-light si-delicious">-->
+<!--                                        <i class="icon-delicious"></i>-->
+<!--                                        <i class="icon-delicious"></i>-->
+<!--                                    </a>-->
+<!--                                    <a href="#" class="social-icon si-small si-light si-paypal">-->
+<!--                                        <i class="icon-paypal"></i>-->
+<!--                                        <i class="icon-paypal"></i>-->
+<!--                                    </a>-->
+<!--                                    <a href="#" class="social-icon si-small si-light si-flattr">-->
+<!--                                        <i class="icon-flattr"></i>-->
+<!--                                        <i class="icon-flattr"></i>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!---->
+<!--                                <div class="col-12 mt-5 text-white-50 text-smaller">-->
+<!--                                    All Rights Reserved <br>&copy; 2020 by SemiColonWeb<br>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!---->
+<!--    </footer> #footer end -->
+<!---->
+<!---->
+<!--     Go To Top-->
+<!--    ============================================= -->
+<!---->
+<!--    <div id="gotoTop" class="icon-angle-up"></div>-->
 
-<?php } else { ?>
-    <?php $contact = get_field('contact', 'option'); ?>
-    <footer id="footer" class="dark" style="background-color: #101010;">
-        <div class="container">
-            <div class="footer-widgets-wrap">
-
-                <div class="row justify-content-center">
-                    <div class="col-lg-9">
-                        <div class="widget clearfix">
-
-                            <div class="row col-mb-30">
-                                <!--                                <div class="col-lg-3 col-6 widget_links">-->
-                                <?php
-                                wp_nav_menu(array(
-                                    'theme_location' => 'footer_first',
-                                    'container' => 'div',
-                                    'container_class' => 'col-lg-3 col-6 widget_links'
-                                )); ?>
-                                <?php wp_nav_menu(array(
-                                    'theme_location' => 'footer_second',
-                                    'container' => 'div',
-                                    'container_class' => 'col-lg-3 col-6 widget_links'
-                                )); ?>
-                                <?php wp_nav_menu(array(
-                                    'theme_location' => 'footer_third',
-                                    'container' => 'div',
-                                    'container_class' => 'col-lg-3 col-6 widget_links'
-                                )); ?>
-                                <?php wp_nav_menu(array(
-                                    'theme_location' => 'footer_fourth',
-                                    'container' => 'div',
-                                    'container_class' => 'col-lg-3 col-6 widget_links'
-                                )); ?>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 mt-5 mt-lg-0 text-center text-lg-right">
-                        <div class="widget clearfix">
-
-                            <div class="row">
-                                <div class="col-12 mb-3">
-                                    <small>Call Us:</small>
-                                    <h4 class="h4"><?= $contact['call_us'] ?></h4>
-                                </div>
-
-                                <div class="col-12 d-flex justify-content-center justify-content-lg-end">
-                                    <a href="#" class="social-icon si-small si-light si-facebook">
-                                        <i class="icon-facebook"></i>
-                                        <i class="icon-facebook"></i>
-                                    </a>
-                                    <a href="#" class="social-icon si-small si-light si-delicious">
-                                        <i class="icon-delicious"></i>
-                                        <i class="icon-delicious"></i>
-                                    </a>
-                                    <a href="#" class="social-icon si-small si-light si-paypal">
-                                        <i class="icon-paypal"></i>
-                                        <i class="icon-paypal"></i>
-                                    </a>
-                                    <a href="#" class="social-icon si-small si-light si-flattr">
-                                        <i class="icon-flattr"></i>
-                                        <i class="icon-flattr"></i>
-                                    </a>
-                                </div>
-
-                                <div class="col-12 mt-5 text-white-50 text-smaller">
-                                    All Rights Reserved <br>&copy; 2020 by SemiColonWeb<br>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </footer><!-- #footer end -->
-
-
-    <!-- Go To Top
-    ============================================= -->
-
-    <div id="gotoTop" class="icon-angle-up"></div>
-
-    <?php wp_footer(); ?>
-<?php } ?>
+<!--    --><?php //wp_footer(); ?>
+<?php //} ?>
 
 <!--<script src="assets/js/functions.js"></script>-->
 

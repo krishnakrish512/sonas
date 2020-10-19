@@ -26,9 +26,9 @@ get_header(); ?>
                                 <div class="entry-meta">
                                     <ul>
                                         <li><i class="icon-calendar3"></i> <?php the_time('jS F Y'); ?></li>
-                                        <li><a href="../../forum-single.html#comments"><i class="icon-comments"></i>
-                                                53</a>
-                                        </li>
+<!--                                        <li><a href="../../forum-single.html#comments"><i class="icon-comments"></i>-->
+<!--                                                53</a>-->
+<!--                                        </li>-->
                                     </ul>
                                 </div>
                                 <div class="entry-content">
