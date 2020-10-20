@@ -25,7 +25,6 @@ add_action('after_setup_theme', 'setup_sonas');
 //
 //}
 
-
 if (function_exists('acf_add_options_page')) {
 
 
