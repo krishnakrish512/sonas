@@ -41,7 +41,6 @@
                                     </div>
                                 <?php
                                 endforeach;
-
                                 while (have_rows('videos')):
                                     the_row();
                                     ?>

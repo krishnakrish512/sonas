@@ -20,7 +20,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="entry">
                             <div class="entry-image">
-                                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url(); ?>"></a>
+                                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url('medium'); ?>"></a>
                             </div>
                             <div class="entry-title title-xs nott">
                                 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
