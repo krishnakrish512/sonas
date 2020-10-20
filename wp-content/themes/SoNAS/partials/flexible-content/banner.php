@@ -5,18 +5,21 @@
                 <?php while (have_rows('block')):
                     the_row();
                     $image = get_sub_field('image');
+                    $Bannerlink=get_sub_field('banner_link');
+//                    var_dump($Bannerlink);
+//                    exit();
                     ?>
-                    <div class="swiper-slide dark">
-                        <div class="container">
-                            <div class="slider-caption slider-caption-center">
-                                <h2 data-animate="fadeInUp"><?php the_sub_field('heading'); ?></h2>
-                                <p class="d-none d-sm-block" data-animate="fadeInUp"
-                                   data-delay="200"><?php the_sub_field('paragraph'); ?></p>
+                        <a class="swiper-slide dark" href="<?= $Bannerlink;?>">
+                            <div class="container">
+                                <div class="slider-caption slider-caption-center">
+                                    <h2 data-animate="fadeInUp"><?php the_sub_field('heading'); ?></h2>
+                                    <p class="d-none d-sm-block" data-animate="fadeInUp"
+                                       data-delay="200"><?php the_sub_field('paragraph'); ?></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide-bg"
-                             style="background-image: url('<?php echo $image ?>')"></div>
-                    </div>
+                            <div class="swiper-slide-bg"
+                                 style="background-image: url('<?php echo $image ?>')"></div>
+                        </a>
                 <?php endwhile; ?>
             </div>
             <div class="slider-arrow-left"><i class="icon-angle-left"></i></div>

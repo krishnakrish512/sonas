@@ -1,11 +1,12 @@
 <footer id="footer" class="dark" style="background-color: #101010;">
     <?php
-//    if (is_page(array('Home', 'About Us', 'Contact', 'Menu Title'))) {
+    //    if (is_page(array('Home', 'About Us', 'Contact', 'Menu Title'))) {
     //    var_dump(is_page());
     //    exit();
     ?>
     <?php $contact = get_field('contact', 'option'); ?>
     <?php $social = get_field('social', 'option'); ?>
+
     <div class="container">
         <!-- Footer Widgets
                 ============================================= -->
@@ -24,9 +25,8 @@
                             </div>
                             <div class="col-lg-6 pb-0">
                                 <div class="footer-big-contacts">
-                                    <span class="d-block">Send an Email:</span>
-                                    <h3 class="mb-0"><?= $contact['send_mail'] ?></h3>
-                                </div>
+                                    <span class="d-block">Incubated by ISET-Nepal</span>
+                                    <img src="<?= $contact['footer_logo'] ?>" class="mb-0" </img></div>
                             </div>
                         </div>
                     </div>
@@ -46,31 +46,6 @@
                             <i class="icon-twitter"></i>
                         </a>
 
-                        <a href="#" class="social-icon si-rounded si-small si-colored si-gplus">
-                            <i class="icon-gplus"></i>
-                            <i class="icon-gplus"></i>
-                        </a>
-
-                        <a href="#" class="social-icon si-rounded si-small si-colored si-pinterest">
-                            <i class="icon-pinterest"></i>
-                            <i class="icon-pinterest"></i>
-                        </a>
-
-                        <a href="#" class="social-icon si-rounded si-small si-colored si-vimeo">
-                            <i class="icon-vimeo"></i>
-                            <i class="icon-vimeo"></i>
-                        </a>
-
-                        <a href="#" class="social-icon si-rounded si-small si-colored si-github">
-                            <i class="icon-github"></i>
-                            <i class="icon-github"></i>
-                        </a>
-
-                        <a href="#" class="social-icon si-rounded si-small si-colored si-yahoo">
-                            <i class="icon-yahoo"></i>
-                            <i class="icon-yahoo"></i>
-                        </a>
-
                         <a href="#" class="social-icon si-rounded si-small si-colored si-linkedin">
                             <i class="icon-linkedin"></i>
                             <i class="icon-linkedin"></i>
@@ -88,7 +63,7 @@
 
         <div class="container text-center text-uppercase">
 
-            Copyrights © 2020 All Rights Reserved by Canvas Inc.
+            Copyrights © 2020 All Rights Reserved by South Asia Nadi Sambad (SoANaS).
 
         </div>
 
@@ -147,7 +122,7 @@
 <!--                            <div class="row">-->
 <!--                                <div class="col-12 mb-3">-->
 <!--                                    <small>Call Us:</small>-->
-<!--                                    <h4 class="h4">--><?//= $contact['call_us'] ?><!--</h4>-->
+<!--                                    <h4 class="h4">--><? //= $contact['call_us'] ?><!--</h4>-->
 <!--                                </div>-->
 <!---->
 <!--                                <div class="col-12 d-flex justify-content-center justify-content-lg-end">-->

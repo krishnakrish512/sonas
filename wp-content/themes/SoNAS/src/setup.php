@@ -14,16 +14,11 @@ function setup_sonas()
             'footer_fourth' => "footer fourth"
         )
     );
-    add_image_size( 'category-thumb', 350,201 );
+    add_image_size( 'category-thumb', 350,197 );
 
 }
 
 add_action('after_setup_theme', 'setup_sonas');
-
-//add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
-//function wpdocs_theme_setup() {
-//
-//}
 
 if (function_exists('acf_add_options_page')) {
 

@@ -3,7 +3,7 @@
 $include_files = [
     "src/setup.php",
     "src/filter.php",
-    "src/helper.php",
+//    "src/helper.php",
 ];
 
 array_walk( $include_files, function ( $file ) {

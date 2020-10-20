@@ -1,5 +1,4 @@
 <?php
-/* Template Name: custom Page*/
 get_header(); ?>
 <section id="content">
     <div class="content-wrap">
@@ -10,17 +9,11 @@ get_header(); ?>
                     'post_type' => 'post',
                     'post_status' => 'publish'
                 );
-                $query = new WP_Query($condition);
-                if ($query->have_posts()) {
-                    while ($query->have_posts()) :
-                        $query->the_post();
-                        ?>
-
-                    <?php
-                    endwhile;
-                    wp_reset_postdata();
-                }
-                ?>
+                while (have_posts()) {
+                    the_post();
+                    ?>
+                    <?php get_template_part('/partials/latest-part');
+                }?>
             </div>
         </div>
     </div>
