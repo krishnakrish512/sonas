@@ -14,7 +14,7 @@ get_header(); ?>
                         while ($query->have_posts()) :
                             $query->the_post();
                             ?>
-                            <?php get_template_part('/partials/latest-part');?>
+                            <?php get_template_part('/partials/singlepost-block');?>
                         <?php
                         endwhile;
                         wp_reset_postdata();

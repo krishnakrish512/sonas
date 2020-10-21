@@ -5,15 +5,12 @@ get_header(); ?>
 
         <div class="container">
             <div class="row posts-md col-mb-30">
-                <?php $condition = array(
-                    'post_type' => 'post',
-                    'post_status' => 'publish'
-                );
+                <?php
                 while (have_posts()) {
                     the_post();
                     ?>
-                    <?php get_template_part('/partials/latest-part');
-                }?>
+                    <?php get_template_part('/partials/singlepost-block');
+                } ?>
             </div>
         </div>
     </div>

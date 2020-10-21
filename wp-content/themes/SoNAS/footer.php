@@ -31,42 +31,31 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-5 col-md-6">
-
                     <div class="clearfix float-right" data-class-xl="float-right" data-class-lg="float-right"
                          data-class-md="float-right" data-class-sm="" data-class-xs="">
                         <a href="<?= $social['facebook'];?>" class="social-icon si-rounded si-small si-colored si-facebook">
                             <i class="icon-facebook"></i>
                             <i class="icon-facebook"></i>
                         </a>
-
                         <a href="<?= $social['twitter'];?>" class="social-icon si-rounded si-small si-colored si-twitter">
                             <i class="icon-twitter"></i>
                             <i class="icon-twitter"></i>
                         </a>
-
                         <a href="<?= $social['linkedin'];?>" class="social-icon si-rounded si-small si-colored si-linkedin">
                             <i class="icon-linkedin"></i>
                             <i class="icon-linkedin"></i>
                         </a>
                     </div>
-
                 </div>
-
             </div>
-
         </div><!-- .footer-widgets-wrap end -->
     </div>
 
     <div id="copyrights">
-
         <div class="container text-center text-uppercase">
-
             Copyrights © 2020 All Rights Reserved by South Asia Nadi Sambad (SoANaS).
-
         </div>
-
     </div>
 </footer><!-- #footer end -->
 
