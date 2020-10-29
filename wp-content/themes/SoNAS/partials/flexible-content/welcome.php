@@ -32,13 +32,19 @@
                         endwhile; ?>
                     </div>
                 </div>
+
                 <div class="text-center">
                     <?php $link = get_sub_field('link');
                     ?>
                     <a href="<?= $link; ?>"
+                        <?php if ($link) { ?>
                        class="button button-large bg-alt text-white font-weight-medium py-2 rounded-sm ml-0 ls0 nott"><i
-                                class="icon-line-paper"></i><?php the_sub_field('button'); ?></a>
+                                class="icon-line-paper"></i><?php the_sub_field('button'); ?>
+                        <?php } else {
+//                            echo 'welcome to web page';
+                        } ?></a>
                 </div>
+
             </div>
 
         </div>

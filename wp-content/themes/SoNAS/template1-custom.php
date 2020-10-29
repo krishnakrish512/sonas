@@ -2,7 +2,6 @@
 get_header(); ?>
     <section id="content">
         <div class="content-wrap">
-
             <div class="container">
                 <div class="row posts-md col-mb-30">
                     <?php $condition = array(

@@ -14,7 +14,7 @@ function setup_sonas()
             'footer_fourth' => "footer fourth"
         )
     );
-    add_image_size('category-thumb', 350, 197);
+    add_image_size('category-thumb', 350, 197,true);
 
 }
 

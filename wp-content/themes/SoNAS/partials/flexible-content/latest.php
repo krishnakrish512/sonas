@@ -10,14 +10,15 @@
         <div class="row posts-md col-mb-30">
             <?php $condition = array(
                 'post_type' => 'post',
-                'post_status' => 'publish'
+                'post_status' => 'publish',
+                'posts_per_page' => '3'
             );
             $query = new WP_Query($condition);
             if ($query->have_posts()) {
                 while ($query->have_posts()) :
                     $query->the_post();
                     ?>
-                    <?php get_template_part('/partials/singlepost-block');?>
+                    <?php get_template_part('/partials/singlepost-block'); ?>
                 <?php
                 endwhile;
                 wp_reset_postdata();
@@ -28,8 +29,6 @@
 
     <div class="text-center">
         <?php $link = get_sub_field('link');
-        //                            var_dump($link);
-        //                            exit();
         ?>
         <a href="<?= $link; ?>"
            class="button button-large bg-alt text-white font-weight-medium py-2 rounded-sm ml-0 ls0 nott"><i
@@ -40,3 +39,4 @@
 </div>
 </div>
 </section><!-- #content end -->
+

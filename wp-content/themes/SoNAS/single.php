@@ -12,9 +12,10 @@
                         <?php
                         the_content();
 
-                        the_time('jS F Y');
+
                         ?>
                         <?php
+
                         $images = get_field('gallery');
                         if (!empty($images) || have_rows('videos')):
                             ?>
@@ -67,14 +68,16 @@
                         <?php
                         endif;
                         ?>
-
                     </div>
                 <?php
-                endwhile;
-                ?>
+                endwhile; ?>
+                <div class="my-3">
+                    <?php the_time('jS F Y'); ?>
+                </div>
             </div>
-
         </div>
+
     </section><!-- #content end -->
 
+    </br>
 <?php get_footer();
