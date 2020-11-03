@@ -14,8 +14,8 @@
 
                         <div class="form-result"></div>
 
-                        <form class="mb-0" id="template-contactform" name="template-contactform"
-                              action="include/form.php" method="post">
+<!--                        <form class="mb-0" id="template-contactform" name="template-contactform"-->
+<!--                              action="include/form.php" method="post">-->
 
                             <div class="form-process">
                                 <div class="css3-spinner">
@@ -26,7 +26,7 @@
                             <?php echo do_shortcode("[contact-form-7 id='" . $contact['form'] . "']") ?>
                             <input type="hidden" name="prefix" value="template-contactform-">
 
-                        </form>
+<!--                        </form>-->
                     </div>
 
                 </div><!-- .postcontent end -->

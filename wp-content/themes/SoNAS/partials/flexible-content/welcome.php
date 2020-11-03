@@ -1,5 +1,5 @@
 <!-- Content
-		============================================= -->
+		============================================= uy@^H@#b{[hz -->
 <section id="content">
     <div class="content-wrap">
         <div class="container clearfix">
@@ -36,13 +36,12 @@
                 <div class="text-center">
                     <?php $link = get_sub_field('link');
                     ?>
-                    <a href="<?= $link; ?>"
-                        <?php if ($link) { ?>
-                       class="button button-large bg-alt text-white font-weight-medium py-2 rounded-sm ml-0 ls0 nott"><i
-                                class="icon-line-paper"></i><?php the_sub_field('button'); ?>
-                        <?php } else {
-//                            echo 'welcome to web page';
-                        } ?></a>
+                    <?php if ($link) { ?>
+                        <a href="<?= $link; ?>"
+                           class="button button-large bg-alt text-white font-weight-medium py-2 rounded-sm ml-0 ls0 nott"><i
+                                    class="icon-line-paper"></i><?php the_sub_field('button'); ?>
+                        </a>
+                    <?php } ?>
                 </div>
 
             </div>

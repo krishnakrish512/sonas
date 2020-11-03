@@ -13,35 +13,21 @@
 
     <div class="widget border-0 pt-0">
 
-        <a href="#" class="social-icon si-small si-dark si-facebook">
+        <a href="<?= $social['facebook'] ?>" class="social-icon si-small si-dark si-facebook">
             <i class="icon-facebook"></i>
             <i class="icon-facebook"></i>
         </a>
 
-        <a href="#" class="social-icon si-small si-dark si-twitter">
+        <a href="<?= $social['twitter'] ?>" class="social-icon si-small si-dark si-twitter">
             <i class="icon-twitter"></i>
             <i class="icon-twitter"></i>
         </a>
 
-        <a href="#" class="social-icon si-small si-dark si-dribbble">
-            <i class="icon-dribbble"></i>
-            <i class="icon-dribbble"></i>
+        <a href="<?= $social['linkedin'] ?>" class="social-icon si-small si-dark si-linkedin">
+            <i class="icon-linkedin"></i>
+            <i class="icon-linkedin"></i>
         </a>
 
-        <a href="#" class="social-icon si-small si-dark si-forrst">
-            <i class="icon-forrst"></i>
-            <i class="icon-forrst"></i>
-        </a>
-
-        <a href="#" class="social-icon si-small si-dark si-pinterest">
-            <i class="icon-pinterest"></i>
-            <i class="icon-pinterest"></i>
-        </a>
-
-        <a href="#" class="social-icon si-small si-dark si-gplus">
-            <i class="icon-gplus"></i>
-            <i class="icon-gplus"></i>
-        </a>
 
     </div>
 

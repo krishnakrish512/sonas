@@ -8,11 +8,15 @@
                 while (have_posts()):
                     the_post();
                     ?>
+                <?php while(have_rows('author_details')): the_row();?>
                     <div class="topic-post">
+                        <div class="auther">
+                            <p class="mb-0"><img loading="lazy" class="alignleft wp-image-470" src="<?php the_sub_field('author_image'); ?>" alt="" width="157" height="179" srcset="<?php the_sub_field('author_image'); ?> 264w, <?php the_sub_field('author_image'); ?> 600w"
+                                                 sizes="(max-width: 157px) 100vw, 157px"><?php the_sub_field('description'); ?></p>
+                        </div>
+                        <?php endwhile;?>
                         <?php
                         the_content();
-
-
                         ?>
                         <?php
 
