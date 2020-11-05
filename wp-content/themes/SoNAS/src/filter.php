@@ -20,3 +20,7 @@ function  wp_menu_link_class($classes, $item)
 
 add_filter('nav_menu_css_class', 'wp_menu_link_class', 10, 2);
 
+
+// REMOVE WP EMOJI
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
