@@ -1,17 +1,3 @@
-<?php
-wp_nav_menu(array(
-    'theme_location' => 'primary',
-    'container' => 'nav',
-    'menu_class' => 'menu-container',
-    'container_class' => 'primary-menu'
-)); ?>
-<!-- #primary-menu end -->
-</div>
-</div>
-</div>
-<div class="header-wrap-clone"></div>
-
-</header><!-- #header end -->
 
 
 <?php if (!is_front_page()) {

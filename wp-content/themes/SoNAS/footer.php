@@ -116,7 +116,7 @@
 
 <!--                                --><?php //if($social){?>
 
-                            <div class="col-lg-3 pb-0">
+                            <div class="col-lg-3 my-2 pb-0">
 
                                 <div class="clearfix float-right" data-class-xl="float-right" data-class-lg="float-right"
 
