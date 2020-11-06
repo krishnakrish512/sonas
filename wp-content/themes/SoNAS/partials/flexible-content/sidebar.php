@@ -8,7 +8,7 @@
 
     </address>
     <abbr title="Phone Number"><strong>Phone:</strong></abbr> <?= $contact['phone_number'] ?><br>
-    <abbr title="Fax"><strong>Fax:</strong></abbr> <?= $contact['fax_number'] ?><br>
+    <abbr title="Fax"><strong>Url:</strong></abbr> <?= $contact['url'] ?><br>
     <abbr title="Email Address"><strong>Email:</strong></abbr> <?= $contact['email'] ?>
 
     <div class="widget border-0 pt-0">

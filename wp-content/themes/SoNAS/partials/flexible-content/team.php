@@ -9,12 +9,13 @@
             <?php while (have_rows('team-details')):
                 the_row();
                 ?>
-
                 <div class="col-lg-3 col-md-6">
-
                     <div class="team">
                         <div class="team-image">
-                            <img src="<?php the_sub_field('image'); ?>" alt="John Doe">
+                            <?php $image=get_sub_field('image');
+//                            var_dump($image);
+//                            exit(); ?>
+                            <img src="<?php echo esc_url($image['url']);  ?>" alt="<?php echo esc_attr($image['title']); ?>">
                         </div>
                         <div class="team-desc">
                             <div class="team-title"><h4><?php the_sub_field('heading'); ?></h4>

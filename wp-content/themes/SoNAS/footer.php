@@ -34,7 +34,7 @@
 
 
 
-        <div class="footer-widgets-wrap py-5">
+        <div class="footer-widgets-wrap pt-5 pb-0 ">
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-                            <div class="col-lg-4 pb-0">
+                            <div class="col-lg-4">
 
 
 
@@ -80,11 +80,11 @@
 
                                         <li class="mb-2">
 
-                                            <span class="d-block">Call Us:</span>
+                                            <span class="d-block">Email:</span>
 
 
 
-                                            <h4 class="mb-0"><?= $contact['call_us'] ?></h4>
+                                            <h4 class="mb-0"><?= $contact['email'] ?></h4>
 
                                         </li>
 
@@ -100,7 +100,7 @@
 
 
 
-                            <div class="col-lg-5 pb-0">
+                            <div class="col-lg-5">
 
 
 
@@ -116,7 +116,7 @@
 
 <!--                                --><?php //if($social){?>
 
-                            <div class="col-lg-3 my-2 pb-0">
+                            <div class="col-lg-3">
 
                                 <div class="clearfix float-right" data-class-xl="float-right" data-class-lg="float-right"
 

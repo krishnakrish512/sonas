@@ -2,16 +2,11 @@
 function setup_sonas()
 {
     add_theme_support('post-thumbnails');
-    add_theme_support('post-permalinks');
     add_theme_support('custom-logo');
     add_theme_support('title-tag');
     register_nav_menus(
         array(
-            'primary' => "primary Menu",
-            'footer_first' => "footer first",
-            'footer_second' => "footer second",
-            'footer_third' => "footer third",
-            'footer_fourth' => "footer fourth"
+            'primary' => "primary Menu"
         )
     );
     add_image_size('category-thumb', 350, 197,true);
@@ -44,7 +39,6 @@ function register_scripts()
         wp_enqueue_script('jquery', get_template_directory_uri() . '/assets/js/jquery.js', [], 1.0, true);
     }
     wp_enqueue_script('plugins-script', get_template_directory_uri() . '/assets/js/plugins.min.js', [], 1.0, true);
-    wp_enqueue_script('tinymce-script', get_template_directory_uri() . '/assets/js/components/tinymce/tinymce.min.js', [], 1.0, true);
     wp_enqueue_script('functions-script', get_template_directory_uri() . '/assets/js/functions.js', [], 1.0, true);
 
 }
