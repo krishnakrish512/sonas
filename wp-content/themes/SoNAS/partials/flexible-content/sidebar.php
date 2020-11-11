@@ -1,4 +1,4 @@
-<!-- Sidebar
+<!-- Sidebar IqGCvRHPOhb7Rc@N52waz!Pr
                     ============================================= -->
 <div class="sidebar col-lg-3">
     <address>
@@ -7,10 +7,16 @@
         <?= $contact['address'] ?>
 
     </address>
-    <abbr title="Phone Number"><strong>Phone:</strong></abbr> <?= $contact['phone_number'] ?><br>
-    <abbr title="Fax"><strong>Url:</strong></abbr> <?= $contact['url'] ?><br>
-    <abbr title="Email Address"><strong>Email:</strong></abbr> <?= $contact['email'] ?>
+    <?php if ($contact['phone_number']) { ?>
+        <abbr title="Phone Number"><strong>Phone:</strong></abbr> <?= $contact['phone_number'] ?><br>
+    <?php } ?>
 
+    <?php if ($contact['url']) { ?>
+        <abbr title="Fax"><strong>Url:</strong></abbr> <?= $contact['url'] ?><br>
+    <?php } ?>
+    <?php if ($contact['email']) { ?>
+        <abbr title="Email Address"><strong>Email:</strong></abbr> <?= $contact['email'] ?>
+    <?php } ?>
     <div class="widget border-0 pt-0">
 
         <a href="<?= $social['facebook'] ?>" class="social-icon si-small si-dark si-facebook">
