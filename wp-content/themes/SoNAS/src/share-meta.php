@@ -1,7 +1,3 @@
-<!--/**-->
-<!--function to add meta tags to event single page.-->
-<!-- these meta tags are required for proper functioning of facebook share feature-->
-<!--*/-->
 <?php
 function photography_share_meta()
 {

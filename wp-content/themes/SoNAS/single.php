@@ -78,27 +78,26 @@
                     ?>
 
                     <?php $facebook_url = "https://www.facebook.com/sharer.php?u=" . get_the_permalink(get_the_ID());
-                    $linkedin_url = "https://www.linkedin.com/sharer.php?u=" . get_the_permalink(get_the_ID());
+                    $linkedin_url = "https://www.linkedin.com/sharing/share-offsite/?url=" . get_the_permalink(get_the_ID());
                     $twitter_url = add_query_arg(
                         [
                             'text' => urlencode(get_the_title(get_the_ID())),
                             'url' => get_the_permalink(get_the_ID()),
-                            'hashtags' => 'revivalpoint'
+//                            'hashtags' => 'revivalpoint'
                         ],
                         "https://www.twitter.com/intent/tweet?"
                     ); ?>
                     <div class="social-icon-list clearfix my-4">
                         <h4 class="mb-2"> Share this article</h4>
-                        <a href="<?= $facebook_url; ?>" class="social-icon si-rounded si-small si-colored si-facebook">
+                        <a href="<?= $facebook_url; ?>" target="_blank" class="social-icon si-rounded si-small si-colored si-facebook">
                             <i class="icon-facebook"></i>
                             <i class="icon-facebook"></i>
                         </a>
-                        <a href="<?= $twitter_url; ?>" class="social-icon si-rounded si-small si-colored si-twitter">
+                        <a href="<?= $twitter_url; ?>" target="_blank" class="social-icon si-rounded si-small si-colored si-twitter">
                             <i class="icon-twitter"></i>
                             <i class="icon-twitter"></i>
                         </a>
-                        <a href="<?= $linkedin_url; ?>"
-                           class="social-icon si-rounded si-small si-colored si-linkedin">
+                        <a href="<?= $linkedin_url; ?>" target="_blank" class="social-icon si-rounded si-small si-colored si-linkedin">
                             <i class="icon-linkedin"></i>
                             <i class="icon-linkedin"></i>
                         </a>

@@ -1,12 +1,13 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 
 <html dir="ltr" lang="en-US">
 
 
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 
 </head>
@@ -63,11 +64,30 @@
                     wp_nav_menu(array(
                         'theme_location' => 'primary',
                         'container' => 'nav',
-                        'menu_class' => 'menu-container',
+                        'menu_class' => 'menu-container border-right',
                         'container_class' => 'primary-menu'
                     )); ?>
                     <!-- #primary-menu end -->
+
+                    <div class="header-misc">
+                        <?php $social = get_field('social', 'option'); ?>
+
+						<a href="<?= $social['facebook'] ?>" class="social-icon si-small si-rounded si-facebook">
+							<i class="icon-facebook"></i>
+							<i class="icon-facebook"></i>
+						</a>
+						<a href="<?= $social['twitter'] ?>" class="social-icon si-small si-rounded si-twitter">
+							<i class="icon-twitter"></i>
+							<i class="icon-twitter"></i>
+						</a>
+						<a href="<?= $social['linkedin'] ?>" class="social-icon si-small si-rounded si-linkedin">
+							<i class="icon-linkedin"></i>
+							<i class="icon-linkedin"></i>
+						</a>
+
+                	</div>
                 </div>
+                
             </div>
         </div>
         <div class="header-wrap-clone"></div>
